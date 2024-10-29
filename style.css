@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: rgb(228, 225, 219);
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav {
+    display: flex;
+}
+
+header img {
+    width: 100%;
+    max-width: 70px;
+    height: 100%;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    padding-top: 25px;
+    list-style: none;
+}
+
+header li a {
+    color: #9e7d52;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 1s;
+}
+
+li a:hover {
+    font-size: 1.2rem;
+}
+
+section .content {
+    display: flex;
+    gap: 300px;
+}
+
+.text-init h1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: rgb(238, 109, 131);
+    animation: bounce 3s ease-in-out infinite;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    padding-top: 60px;
+}
+
+section span {
+    color: #8b6834;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+}
+
+.section-about {
+    background-color: aliceblue;
+}
+
+.content-about {
+    padding-top: 90px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.content-about .text {
+    background-color: rgb(233, 200, 157);
+    border-radius: 20px;
+    border: 2px solid #f368dc;
+    box-shadow: 0 0 10px 5px rgba(0, 128, 255, 0.6);
+    width: 90%;
+    min-height: 380px; /* Define altura mínima */
+    padding: 20px; /* Adiciona um pouco de padding para o conteúdo não encostar na borda */
+    margin-bottom: 70px;
+}
+
+.content-about h2 {
+    padding: 20px;
+    color: rgb(238, 109, 131);
+    text-align: center;
+}
+
+.content-about h2 span {
+    color: #5e3c1d;
+}
+
+.content-about h3 {
+    padding: 20px;
+    color: #5e3c1d;
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+    color: #5e3c1d;
+    font-weight: bold;
+}
+
+main span {
+    color: #f368dc;
+}
+
+.content-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 280px;
+    margin: 40px;
+    animation: bounce 2s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.card img {
+    width: 100%;
+    max-width: 160px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.card .card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.card .card-title {
+    padding-bottom: 20px;
+}
+
+.card .btn {
+    background-color: #8b6834;
+    border-radius: 20px;
+    color: aliceblue;
+    border: 2px solid #f368dc;
+    box-shadow: 0 0 10px 2px rgba(0, 128, 255, 0.6);
+    padding: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .text-init h1 {
+        font-size: 2rem;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .section-about, .content-about {
+        margin-left: 50px;
+    }
+
+    .content-card {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    .card img {
+        max-width: 140px;
+        margin-left: 30px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header ul {
+        gap: 15px;
+        padding-top: 15px;
+    }
+
+    header li a {
+        font-size: 1rem;
+    }
+
+    .text-init h1 {
+        font-size: 1.8rem;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .content-about h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-about h3 {
+        font-size: 1rem;
+    }
+
+    .content-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        height: 220px;
+        margin: 20px;
+    }
+
+    .card img {
+        max-width: 120px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    header div {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text-init h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .text-init h1 span {
+        font-size: 1.2rem;
+    }
+
+    section .content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .section-about, .content-about {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .content-about .text {
+        height: auto;
+        margin: 10px;
+    }
+
+    .content-about h2 {
+        font-size: 1.3rem;
+    }
+
+    .content-about h3 {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .card img {
+        max-width: 100px;
+        margin-left: 50px;
+    }
+}

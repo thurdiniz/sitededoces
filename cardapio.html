@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/cardapio.css">
+    <title>Cardápio VN DOCES</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="./img/logo-VN.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>           
+        </div>
+    </header>
+
+    <section>
+        <div id="menu">
+                <div class="global-cardapio">
+                    <div class="content-cardapio">
+                        <div class="text-cardapio">
+                            <h1 class="bounce">Conheça Nossos <span class="bounce">Açais</span></h1>
+        
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="info-menu">
+                            <div class="menu">
+                                <img src="./images/açai1-removebg-preview - Copia.png" alt="1">
+                                <h3>Açai da Casa</h3>
+                                <p>Açai | Granola | Morango | Banana</p>
+                                <h4>
+                                    R$ 14,50
+                                </h4>
+                                <button class="add-to-cart-btn"
+                                data-name="Açai da Casa"
+                                data-price="14,50">
+                                <img width="50" height="50" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                                </button>
+                            </div>   
+                        </div>
+        
+                        <div class="info-menu">
+                            <div class="menu">
+                                <img src="./images//açai2-removebg-preview - Copia.png" alt="">
+                                <h3>Açai com Fruta</h3>
+                                <p>Açai | Morango | Leite Condensado | Manga</p>
+                                <h4>
+                                    R$ 14,50
+                                </h4>
+                                <button class="add-to-cart-btn"
+                                data-name="Açai com Fruta"
+                                data-price="14,50">
+                                <img width="50" height="50" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                                </button>
+                            </div>   
+                        </div>
+        
+                        <div class="info-menu">
+                            <div class="menu">
+                                <img src="./images/açai3-removebg-preview.png" alt="1">
+                                <h3>Açai Especial</h3>
+                                <p>Açai | Granola | Morango | Laraja</p>
+                                <h4>
+                                    R$ 13,50
+                                </h4>
+                                <button class="add-to-cart-btn"
+                                data-name="Açai Especial"
+                                data-price="13,50">
+                                <img width="50" height="50" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                                </button>
+                            </div>   
+                        </div>
+        
+                        <div class="info-menu">
+                            <div class="menu">
+                                <img src="./images/açai4-removebg-preview.png" alt="1">
+                                <h3>Açai Gourme</h3>
+                                <p>Açai | Granola | Leite em Pó | Morango | Banana | Leite condensado</p>
+                                <h4>
+                                    R$ 14,50
+                                </h4>
+                                <button class="add-to-cart-btn"
+                                data-name="Açai Gourme"
+                                data-price="14,50">
+                                <img width="50" height="50" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                                </button>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <div class="modal" id="cart-modal">
+        <div class="cart-modal">
+            <h2 class="my-cart">Meu carrinho</h2>
+
+            <div class="items-cart" id="cart-items"></div>
+
+            <p class="total-cart">total: <span id="cart-total">0.00</span></p>
+
+            <p class="p-endereço">Endereço de entrega:</p>
+
+            <input 
+            type="text"
+            placeholder="Digite seu endereço..."
+            id="address"
+            class="input-modal"
+            />
+            <p class="warn-address" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="modal-checkout">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="btn-checkout">Finalizar pedido</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <button class="footer-btn" id="cart-btn">
+            (<span class="span-footer" id="cart-count">0</span>)
+            <p class="text-footer">Veja meu carrinho</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
